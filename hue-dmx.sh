@@ -7,6 +7,7 @@ start() {
     cd "$SCRIPT_DIR" || exit
     python3 "$SCRIPT_DIR/hue-dmx.py"
 }
+#cd is used as to change directory
 
 stop() {
     if [ -f $PID_FILE ]; then
